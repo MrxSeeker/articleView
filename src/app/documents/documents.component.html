@@ -1,0 +1,17 @@
+<h2>Dokumenti</h2>
+<!-- z ngfor ponovimo značko, glede na to, koliko elementov, se nahaja v polji -->
+<table class="table">
+  <div *ngFor="let dokument of dokumenti">
+    <!-- Naredi težave če imam ngFor med <tr></tr>-->
+    <tr>
+      <th>Datum</th>
+      <th>Stranka</th>
+      <th>Znesek</th>
+    </tr>
+    <tr>
+      <td>{{ dokument.datum.toString() }}</td>
+      <td>{{ dokument.stranka }}</td>
+      <td>{{ dokument.znesek }}</td>
+    </tr>
+  </div>
+</table>

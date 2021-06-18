@@ -1,0 +1,15 @@
+<h2>Artikli</h2>
+<!-- z ngfor ponovimo značko, glede na to, koliko elementov, se nahaja v polji -->
+<div class="card-columns">
+  <div *ngFor="let article of articleList.slice().reverse()">
+    <div class="card p-2">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">{{ article.ident.toString() }}</p>
+        <p class="card-text">{{ article.naziv }}</p>
+        <p class="card-text">{{ article.tip }}</p>
+        <p class="card-text">{{ article.klasifikacija }}</p>
+      </div>
+    </div>
+  </div>
+</div>
